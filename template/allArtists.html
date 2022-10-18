@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Groupie Tracker : All Artists</title>
+    <link rel="icon" type="image/png" href="../static/icn/icn-STS.png">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <nav>
+        <!-- Return -->
+        <div class="anim">
+            <a href="../" class="infobulle" aria-label="Retour : Acceuil" alt="Power : Icone de redirection vers la page d'acceuil"><img src="../static/icn/icn-retour.png" alt="icn-retour"></a>
+        </div>
+
+        <!-- Filters Creation date -->
+        <div class="card">
+            <div class="filter face1">
+                <h5>Creation date</h5>
+            </div>
+            <div class="filter face2">
+                <div>
+                    <label>from</label>
+                    <input type="number" id="create-min" min="1950" max="2022" value="1950"/>
+                </div>
+                <div>
+                    <label>to</label>
+                    <input type="number" id="create-max" min="1950" max="2022" value="2022"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters First album -->
+        <div class="card">
+            <div class="filter face1">
+                <h5>First album</h5>
+            </div>
+            <div class="filter face2">
+                <div>
+                    <label>from</label>
+                    <input type="number" id="first-min" min="1950" max="2022" value="1950"/>
+                </div>
+                <div>
+                    <label>to</label>
+                    <input type="number" id="first-max" min="1950" max="2022" value="2022"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Number member -->
+        <div class="card">
+            <div class="filter face1">
+                <h5>Number member</h5>
+            </div>
+            <div id="number-member" class="filter face2"></div>
+        </div>
+
+        <!-- Filters Live location -->
+        <div class="card">
+            <div class="filter face1">
+                <h5>Live location</h5>
+            </div>
+            <div class="filter face2">
+                <div id="country">
+                    <label>Country</label>
+                    <select name="live-country" id="live-country">
+                        <option value="" disabled="disabled" selected="selected">Choose a country</option>
+                    </select>
+                </div>
+                <div id="city">
+                    <label>City</label>
+                    <select name="live-city" id="live-city">
+                        <option value="" class="option-city" disabled="disabled" selected="selected">Choose a city</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Live date -->
+        <div class="card">
+            <div class="filter face1">
+                <h5>Live date</h5>
+            </div>
+            <div class="filter face2">
+                <div>
+                    <label>from</label>
+                    <input type="date" id="live-start" name="calendrier">
+                </div>
+                <div>
+                    <label>to</label>
+                    <input type="date" id="live-end" name="calendrier">
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="card">
+            <div class="filter face1">
+                <h5>Search</h5>
+            </div>
+            <div class="filter face2">
+                <input type="text" id="search" onkeyup="searchBar()" list="result-search" placeholder="Search..."/>
+                <datalist id="result-search" class="anim"></datalist>
+            </div>
+        </div>
+
+        <!-- Init Page -->        
+        <a href="./allArtists" name="allGroup">
+            <button name="allGroup">Refresh page</button>
+        </a>
+    </nav>
+    
+    <main id="artist">
+        {{range .}}
+            <div id="group{{.Id}}" class="allArtist">
+                <div class="container allArtist">
+                    <h3 id="name-group{{.Id}}">{{.Name}}</h3> 
+                    <a href="./artist?group={{.Name}}" name="group" value="{{.Name}}"> 
+                        <img name="group" value="{{.Name}}" src="{{.Image}}" class="img"> 
+                    </a> 
+                    
+                    <div class="verticale">
+                        <a href="./artist?group={{.Name}}" name="group" value="{{.Name}}">
+                            <button name="group" value="{{.Name}}" >More info...</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {{end}}
+    </main>
+
+    <footer>
+        <h5>Zone01 - Tony Quedeville : tquedevi</h5>
+        <h5>Projet Groupie-Tracker : 26/09/2022</h5><a href="https://zone01normandie.org/git/tquedevi/Groupie-Tracker" class="infobulle anim" target="_blank" aria-label="Gitea Zone01 : Groupie-Tracker" alt="Lien vers le projet Gitea Groupie-Tracker">
+        <div class="logo"><img src="../static/icn/icn-STS-blanc.png" width="25" height="25" alt="Logo STS"></div></a>
+    </footer>
+    
+    <!-- Script JS --><!-- Doc https://api.jquery.com/ -->
+    <!-- jQuery 
+        <script src="jQuery.js"></script> 
+    -->    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
+    <script src="../static/js/allArtists.js"></script> <!---->
+</body>
+</html>

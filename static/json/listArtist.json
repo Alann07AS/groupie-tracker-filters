@@ -1,0 +1,1866 @@
+[
+	{
+		"Id": 1,
+		"Name": "Queen",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/queen.jpeg",
+		"Members": [
+			"Freddie Mercury",
+			"Brian May",
+			"John Daecon",
+			"Roger Meddows-Taylor",
+			"Mike Grose",
+			"Barry Mitchell",
+			"Doug Fogie"
+		],
+		"CreationDate": 1970,
+		"FirstAlbum": "14-12-1973",
+		"Concerts": {
+			"dunedin-new_zealand": [
+				"10-02-2020"
+			],
+			"georgia-usa": [
+				"22-08-2019"
+			],
+			"los_angeles-usa": [
+				"20-08-2019"
+			],
+			"nagoya-japan": [
+				"30-01-2019"
+			],
+			"north_carolina-usa": [
+				"23-08-2019"
+			],
+			"osaka-japan": [
+				"28-01-2020"
+			],
+			"penrose-new_zealand": [
+				"07-02-2020"
+			],
+			"saitama-japan": [
+				"26-01-2020"
+			]
+		}
+	},
+	{
+		"Id": 2,
+		"Name": "SOJA",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/soja.jpeg",
+		"Members": [
+			"Jacob Hemphill",
+			"Bob Jefferson",
+			"Ryan \"Byrd\" Berty",
+			"Ken Brownell",
+			"Patrick O'Shea",
+			"Hellman Escorcia",
+			"Rafael Rodriguez",
+			"Trevor Young"
+		],
+		"CreationDate": 1997,
+		"FirstAlbum": "05-06-2002",
+		"Concerts": {
+			"noumea-new_caledonia": [
+				"15-11-2019"
+			],
+			"papeete-french_polynesia": [
+				"16-11-2019"
+			],
+			"playa_del_carmen-mexico": [
+				"05-12-2019",
+				"06-12-2019",
+				"07-12-2019",
+				"08-12-2019",
+				"09-12-2019"
+			]
+		}
+	},
+	{
+		"Id": 3,
+		"Name": "Pink Floyd",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/pinkfloyd.jpeg",
+		"Members": [
+			"David Gilmour",
+			"Syd Barrett",
+			"Roger Waters",
+			"Richard Wright",
+			"Nick Manson",
+			"Bob Klose"
+		],
+		"CreationDate": 1965,
+		"FirstAlbum": "05-08-1967",
+		"Concerts": {
+			"lausanne-switzerland": [
+				"25-09-1994"
+			],
+			"london-uk": [
+				"10-05-2007",
+				"02-07-2005",
+				"29-10-1994",
+				"28-10-1994",
+				"27-10-1994",
+				"26-10-1994",
+				"23-10-1994",
+				"22-10-1994",
+				"21-10-1994",
+				"20-10-1994",
+				"19-10-1994",
+				"17-10-1994",
+				"16-10-1994",
+				"15-10-1994",
+				"14-10-1994",
+				"13-10-1994",
+				"12-10-1994"
+			],
+			"lyon-france": [
+				"23-09-1994"
+			]
+		}
+	},
+	{
+		"Id": 4,
+		"Name": "Scorpions",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/scorpions.jpeg",
+		"Members": [
+			"Klaus Meine",
+			"Rudolf Schenker",
+			"Matthias Jabs",
+			"Pawel Maciwoda",
+			"Mikkey Dee"
+		],
+		"CreationDate": 1965,
+		"FirstAlbum": "21-04-1979",
+		"Concerts": {
+			"auckland-new_zealand": [
+				"27-02-2020"
+			],
+			"bratislava-slovakia": [
+				"20-11-2019"
+			],
+			"budapest-hungary": [
+				"18-11-2019"
+			],
+			"minsk-belarus": [
+				"15-11-2019"
+			],
+			"new_south_wales-australia": [
+				"22-02-2020"
+			],
+			"queensland-australia": [
+				"24-02-2020"
+			],
+			"victoria-australia": [
+				"19-02-2020"
+			],
+			"yogyakarta-indonesia": [
+				"01-03-2019"
+			]
+		}
+	},
+	{
+		"Id": 5,
+		"Name": "XXXTentacion",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/xxxtentacion.jpeg",
+		"Members": [
+			"Jahseh Dwayne Ricardo Onfroy"
+		],
+		"CreationDate": 2013,
+		"FirstAlbum": "07-09-2017",
+		"Concerts": {
+			"california-usa": [
+				"16-12-2017",
+				"17-12-2017",
+				"21-10-2017",
+				"22-10-2017",
+				"13-08-2017",
+				"12-08-2017"
+			],
+			"georgia-usa": [
+				"01-08-2017"
+			],
+			"nevada-usa": [
+				"04-08-2017"
+			]
+		}
+	},
+	{
+		"Id": 6,
+		"Name": "Mac Miller",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/macmiller.jpeg",
+		"Members": [
+			"Malcolm James McCormick"
+		],
+		"CreationDate": 2007,
+		"FirstAlbum": "29-06-2013",
+		"Concerts": {
+			"california-usa": [
+				"28-04-2018",
+				"29-04-2018"
+			],
+			"san_isidro-argentina": [
+				"16-03-2018",
+				"17-03-2018",
+				"18-03-2018"
+			],
+			"sao_paulo-brazil": [
+				"23-03-2018",
+				"24-03-2018",
+				"25-03-2018"
+			]
+		}
+	},
+	{
+		"Id": 7,
+		"Name": "Joyner Lucas",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/joynerlucas.jpeg",
+		"Members": [
+			"Gary Maurice Lucas Jr."
+		],
+		"CreationDate": 2007,
+		"FirstAlbum": "13-05-2011",
+		"Concerts": {
+			"arizona-usa": [
+				"08-10-2019"
+			],
+			"california-usa": [
+				"19-10-2019",
+				"18-10-2019",
+				"17-10-2019",
+				"15-10-2019",
+				"12-10-2019",
+				"11-10-2019"
+			],
+			"texas-usa": [
+				"06-10-2019"
+			]
+		}
+	},
+	{
+		"Id": 8,
+		"Name": "Kendrick Lamar",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/kencricklamar.jpeg",
+		"Members": [
+			"Kendrick Lamar Duckworth"
+		],
+		"CreationDate": 2004,
+		"FirstAlbum": "03-11-2012",
+		"Concerts": {
+			"bilbao-spain": [
+				"09-07-2020",
+				"10-07-2020",
+				"11-07-2020"
+			],
+			"bogota-colombia": [
+				"05-04-2019",
+				"06-04-2019",
+				"07-04-2019"
+			],
+			"georgia-usa": [
+				"08-06-2019"
+			],
+			"lisbon-portugal": [
+				"09-07-2020",
+				"10-07-2020",
+				"11-07-2020"
+			],
+			"sao_paulo-brazil": [
+				"05-04-2019",
+				"06-04-2019",
+				"07-04-2019"
+			],
+			"stockholm-sweden": [
+				"26-06-2020",
+				"27-06-2020",
+				"28-06-2020"
+			],
+			"werchter-belgium": [
+				"04-07-2020"
+			]
+		}
+	},
+	{
+		"Id": 9,
+		"Name": "ACDC",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/acdc.jpeg",
+		"Members": [
+			"Angus Young",
+			"Chris Slade",
+			"Stevie Young",
+			"Axl Rose"
+		],
+		"CreationDate": 1973,
+		"FirstAlbum": "11-05-1977",
+		"Concerts": {
+			"aarhus-denmark": [
+				"12-06-2016"
+			],
+			"dusseldorf-germany": [
+				"15-06-2016"
+			],
+			"manchester-uk": [
+				"09-06-2016"
+			],
+			"new_york-usa": [
+				"14-09-2016",
+				"11-09-2016"
+			]
+		}
+	},
+	{
+		"Id": 10,
+		"Name": "Pearl Jam",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/pearljam.jpeg",
+		"Members": [
+			"Eddie Vedder",
+			"Mike McCready",
+			"Stone Gossard",
+			"Jeff Ament",
+			"Matt Cameron"
+		],
+		"CreationDate": 1990,
+		"FirstAlbum": "03-07-1992",
+		"Concerts": {
+			"berlin-germany": [
+				"25-06-2020"
+			],
+			"copenhagen-denmark": [
+				"29-06-2020"
+			],
+			"frankfurt-germany": [
+				"23-06-2020"
+			],
+			"stockholm-sweden": [
+				"26-06-2020",
+				"27-06-2020",
+				"28-06-2020"
+			],
+			"werchter-belgium": [
+				"02-07-2020"
+			]
+		}
+	},
+	{
+		"Id": 11,
+		"Name": "Katy Perry",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/katyperry.jpeg",
+		"Members": [
+			"Katheryn Elizabeth Hudson"
+		],
+		"CreationDate": 2001,
+		"FirstAlbum": "04-10-2008",
+		"Concerts": {
+			"california-usa": [
+				"06-12-2019"
+			],
+			"doha-qatar": [
+				"15-12-2019"
+			],
+			"illinois-usa": [
+				"07-12-2019"
+			],
+			"minnesota-usa": [
+				"09-12-2019"
+			],
+			"mumbai-india": [
+				"16-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 12,
+		"Name": "Rihanna",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/rihanna.jpeg",
+		"Members": [
+			"Robyn Rihanna Fenty"
+		],
+		"CreationDate": 2003,
+		"FirstAlbum": "10-09-2005",
+		"Concerts": {
+			"abu_dhabi-united_arab_emirates": [
+				"27-11-2016"
+			],
+			"new_york-usa": [
+				"24-09-2016"
+			],
+			"pennsylvania-usa": [
+				"03-09-2016",
+				"04-09-2016"
+			]
+		}
+	},
+	{
+		"Id": 13,
+		"Name": "Genesis",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/genesis.jpeg",
+		"Members": [
+			"Mike Rutherford",
+			"Tony Banks",
+			"Phil Collins",
+			"Chester Thompson",
+			"Daryl Stuermer"
+		],
+		"CreationDate": 1967,
+		"FirstAlbum": "14-10-1972",
+		"Concerts": {
+			"illinois-usa": [
+				"06-09-2012"
+			],
+			"merkers-germany": [
+				"29-06-2012",
+				"30-06-2012"
+			],
+			"westcliff_on_sea-uk": [
+				"07-10-2012"
+			]
+		}
+	},
+	{
+		"Id": 14,
+		"Name": "Phil Collins",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/philcollins.jpeg",
+		"Members": [
+			"Phil Collins"
+		],
+		"CreationDate": 1966,
+		"FirstAlbum": "21-02-1981",
+		"Concerts": {
+			"arizona-usa": [
+				"18-10-2019"
+			],
+			"california-usa": [
+				"17-10-2019"
+			],
+			"nevada-usa": [
+				"19-10-2019"
+			]
+		}
+	},
+	{
+		"Id": 15,
+		"Name": "Led Zeppelin",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/ledzeppelin.jpeg",
+		"Members": [
+			"Jimmy Page",
+			"John Paul Jones",
+			"Robert Plant",
+			"John Bonham"
+		],
+		"CreationDate": 1968,
+		"FirstAlbum": "12-04-1969",
+		"Concerts": {
+			"london-uk": [
+				"10-12-2007",
+				"15-03-2003"
+			],
+			"maine-usa": [
+				"17-04-1994"
+			],
+			"new_york-usa": [
+				"12-01-1995"
+			]
+		}
+	},
+	{
+		"Id": 16,
+		"Name": "The Jimi Hendrix Experience",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/jimihendrix.jpeg",
+		"Members": [
+			"Jimi Hendrix",
+			"Mitch Mitchell",
+			"Noel Redding",
+			"Billy Cox"
+		],
+		"CreationDate": 1966,
+		"FirstAlbum": "27-05-1967",
+		"Concerts": {
+			"aarhus-denmark": [
+				"02-09-1970"
+			],
+			"berlin-germany": [
+				"04-09-1970"
+			],
+			"copenhagen-denmark": [
+				"03-09-1970"
+			],
+			"gothenburg-sweden": [
+				"01-09-1970"
+			]
+		}
+	},
+	{
+		"Id": 17,
+		"Name": "Bee Gees",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/beegees.jpeg",
+		"Members": [
+			"Barry Gib",
+			"Robin Gibb",
+			"Maurice Gibb"
+		],
+		"CreationDate": 1958,
+		"FirstAlbum": "12-08-1967",
+		"Concerts": {
+			"florida-usa": [
+				"05-10-1979",
+				"04-10-1979"
+			],
+			"north_carolina-usa": [
+				"02-10-1979"
+			],
+			"south_carolina-usa": [
+				"03-10-1979"
+			]
+		}
+	},
+	{
+		"Id": 18,
+		"Name": "Deep Purple",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/deeppurple.jpeg",
+		"Members": [
+			"Ian Paice",
+			"Ian Gillan",
+			"Roger Glover",
+			"Steve Morse",
+			"Don Airey"
+		],
+		"CreationDate": 1968,
+		"FirstAlbum": "24-01-1970",
+		"Concerts": {
+			"boulogne_billancourt-france": [
+				"30-06-2020"
+			],
+			"freyming_merlebach-france": [
+				"09-12-2019"
+			],
+			"hamburg-germany": [
+				"24-06-2020"
+			],
+			"klagenfurt-austria": [
+				"01-12-2019"
+			],
+			"nimes-france": [
+				"01-07-2020"
+			],
+			"ostrava-czechia": [
+				"04-12-2019"
+			],
+			"pagney_derriere_barine-france": [
+				"25-01-2020"
+			],
+			"sion-switzerland": [
+				"08-07-2020",
+				"09-07-2020"
+			]
+		}
+	},
+	{
+		"Id": 19,
+		"Name": "Aerosmith",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/aerosmith.jpeg",
+		"Members": [
+			"Steven Tyler",
+			"Tom Hamilton",
+			"Joey Kramer",
+			"Joe Perry",
+			"Brad Whitford"
+		],
+		"CreationDate": 1970,
+		"FirstAlbum": "05-09-1987",
+		"Concerts": {
+			"london-uk": [
+				"15-07-2020"
+			],
+			"manchester-uk": [
+				"18-07-2020"
+			],
+			"nevada-usa": [
+				"29-01-2020",
+				"31-01-2020",
+				"03-02-2020",
+				"05-02-2020",
+				"08-02-2020",
+				"10-02-2020",
+				"13-02-2020",
+				"15-02-2020",
+				"20-05-2020",
+				"23-05-2020",
+				"25-05-2020",
+				"28-05-2020",
+				"30-05-2020",
+				"02-06-2020",
+				"04-06-2020"
+			]
+		}
+	},
+	{
+		"Id": 20,
+		"Name": "Dire Straits",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/direstraits.jpeg",
+		"Members": [
+			"Mark Knopfler",
+			"David Knopfler",
+			"John Illsley",
+			"Pick Withers"
+		],
+		"CreationDate": 1977,
+		"FirstAlbum": "22-07-1978",
+		"Concerts": {
+			"barcelona-spain": [
+				"04-10-1992",
+				"03-10-1992",
+				"02-10-1992"
+			],
+			"madrid-spain": [
+				"07-10-1992",
+				"06-10-1992"
+			],
+			"zaragoza-spain": [
+				"09-10-1992"
+			]
+		}
+	},
+	{
+		"Id": 21,
+		"Name": "Mamonas Assassinas",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/mamonasassassinas.jpeg",
+		"Members": [
+			"Dinho",
+			"Bento Hinoto",
+			"Júlio Rasec",
+			"Sérgio Reoli",
+			"Samuel Reis de Oliveira"
+		],
+		"CreationDate": 1995,
+		"FirstAlbum": "23-06-1995",
+		"Concerts": {
+			"recife-brazil": [
+				"28-12-1995"
+			],
+			"rio_de_janeiro-brazil": [
+				"10-02-1996"
+			]
+		}
+	},
+	{
+		"Id": 22,
+		"Name": "Thirty Seconds to Mars",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/30.jpeg",
+		"Members": [
+			"Jared Leto",
+			"Shannon Leto",
+			"Tomo Miličević",
+			"Matt Wachter",
+			"Solon Bixler"
+		],
+		"CreationDate": 1998,
+		"FirstAlbum": "27-06-2002",
+		"Concerts": {
+			"amsterdam-netherlands": [
+				"06-08-2019"
+			],
+			"budapest-hungary": [
+				"23-07-2019"
+			],
+			"burriana-spain": [
+				"03-08-2019"
+			],
+			"california-usa": [
+				"08-09-2019",
+				"07-09-2019"
+			],
+			"cuxhaven-germany": [
+				"19-07-2019"
+			],
+			"leipzig-germany": [
+				"17-08-2019"
+			],
+			"monchengladbach-germany": [
+				"15-08-2019"
+			],
+			"napoca-romania": [
+				"21-07-2019"
+			],
+			"oulu-finland": [
+				"27-07-2019"
+			],
+			"salem-germany": [
+				"16-08-2019"
+			],
+			"skanderborg-denmark": [
+				"08-08-2019"
+			]
+		}
+	},
+	{
+		"Id": 23,
+		"Name": "Imagine Dragons",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/imagineDragons.jpeg",
+		"Members": [
+			"Dan Reynolds",
+			"Daniel Wayne Sermon",
+			"Ben McKee"
+		],
+		"CreationDate": 2008,
+		"FirstAlbum": "04-09-2012",
+		"Concerts": {
+			"berlin-germany": [
+				"08-09-2018"
+			],
+			"california-usa": [
+				"24-05-2019",
+				"26-05-2019"
+			],
+			"canton-usa": [
+				"04-08-2019"
+			],
+			"del_mar-usa": [
+				"22-09-2018"
+			],
+			"las_vegas-usa": [
+				"31-12-2018",
+				"22-09-2018"
+			],
+			"lisbon-portugal": [
+				"04-09-2018"
+			],
+			"mexico_city-mexico": [
+				"17-11-2018",
+				"18-10-2018"
+			],
+			"monterrey-mexico": [
+				"17-07-2018"
+			],
+			"new_york-usa": [
+				"25-05-2019"
+			],
+			"quebec-canada": [
+				"14-07-2019"
+			],
+			"rio_de_janeiro-brazil": [
+				"27-09-2019"
+			],
+			"riyadh-saudi_arabia": [
+				"22-11-2019",
+				"07-09-2019"
+			]
+		}
+	},
+	{
+		"Id": 24,
+		"Name": "Juice Wrld",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/juiceWrld.jpeg",
+		"Members": [
+			" Jarad Higgins"
+		],
+		"CreationDate": 2015,
+		"FirstAlbum": "23-05-2018",
+		"Concerts": {
+			"amsterdam-netherlands": [
+				"25-03-2019"
+			],
+			"birmingham-uk": [
+				"14-05-2019"
+			],
+			"chicago-usa": [
+				"30-05-2019"
+			],
+			"copenhagen-denmark": [
+				"01-05-2019"
+			],
+			"manchester-uk": [
+				"18-03-2019"
+			],
+			"missouri-usa": [
+				"18-01-2019"
+			],
+			"paris-france": [
+				"07-03-2019"
+			],
+			"washington-usa": [
+				"08-12-2018"
+			],
+			"west_melbourne-australia": [
+				"29-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 25,
+		"Name": "Logic",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/logic.jpeg",
+		"Members": [
+			"Sir Robert Bryson Hall II"
+		],
+		"CreationDate": 2009,
+		"FirstAlbum": "22-09-2015",
+		"Concerts": {
+			"boston-usa": [
+				"05-11-2019"
+			],
+			"california-usa": [
+				"12-10-2019"
+			],
+			"cleveland-usa": [
+				"12-11-2019"
+			],
+			"madison-usa": [
+				"16-11-2019"
+			],
+			"new_york-usa": [
+				"08-11-2019"
+			],
+			"sydney-australia": [
+				"02-12-2019"
+			],
+			"texas-usa": [
+				"19-10-2019",
+				"18-10-2019"
+			],
+			"toronto-canada": [
+				"13-11-2019"
+			],
+			"utah-usa": [
+				"15-10-2019"
+			],
+			"west_melbourne-australia": [
+				"04-12-2019"
+			]
+		}
+	},
+	{
+		"Id": 26,
+		"Name": "Alec Benjamin",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/alecBeenjamin.jpeg",
+		"Members": [
+			"Alec Benjamin"
+		],
+		"CreationDate": 2013,
+		"FirstAlbum": "15-11-2018",
+		"Concerts": {
+			"aberdeen-uk": [
+				"15-03-2020"
+			],
+			"berlin-germany": [
+				"22-11-2019"
+			],
+			"cardiff-uk": [
+				"11-03-2020"
+			],
+			"dublin-ireland": [
+				"08-03-2020",
+				"09-03-2020",
+				"28-11-2019"
+			],
+			"glasgow-uk": [
+				"05-03-2020",
+				"06-03-2020"
+			],
+			"london-uk": [
+				"12-03-2020",
+				"13-03-2020",
+				"27-11-2019",
+				"26-11-2019"
+			],
+			"madrid-spain": [
+				"08-07-2020"
+			],
+			"manchester-uk": [
+				"02-03-2020",
+				"03-03-2020"
+			],
+			"milan-italy": [
+				"20-11-2019"
+			],
+			"paris-france": [
+				"25-11-2019"
+			],
+			"stockholm-sweden": [
+				"26-06-2020"
+			],
+			"warsaw-poland": [
+				"23-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 27,
+		"Name": "Bobby McFerrins",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/bobbyMcFerrin.jpeg",
+		"Members": [
+			"Bobby McFerrin"
+		],
+		"CreationDate": 1977,
+		"FirstAlbum": "01-09-1982",
+		"Concerts": {
+			"amsterdam-netherlands": [
+				"07-11-2019"
+			],
+			"colorado-usa": [
+				"07-09-2020"
+			],
+			"eindhoven-netherlands": [
+				"14-11-2019"
+			],
+			"lyon-france": [
+				"18-11-2019"
+			],
+			"michigan-usa": [
+				"16-01-2020"
+			],
+			"new_hampshire-usa": [
+				"29-01-2020"
+			],
+			"new_york-usa": [
+				"29-02-2020",
+				"23-05-2020"
+			],
+			"oslo-norway": [
+				"10-11-2019"
+			],
+			"sochaux-france": [
+				"20-11-2019"
+			],
+			"warsaw-poland": [
+				"22-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 28,
+		"Name": "R3HAB",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/R3HAB.jpeg",
+		"Members": [
+			"Fadil El Ghoul"
+		],
+		"CreationDate": 2008,
+		"FirstAlbum": "09-12-2014",
+		"Concerts": {
+			"aalborg-denmark": [
+				"17-01-2020"
+			],
+			"changzhou-china": [
+				"27-12-2019"
+			],
+			"colorado-usa": [
+				"07-09-2020"
+			],
+			"hong_kong-china": [
+				"29-12-2019"
+			],
+			"huizhou-china": [
+				"15-12-2019"
+			],
+			"jakarta-indonesia": [
+				"13-12-2019",
+				"14-12-2019",
+				"15-12-2019"
+			],
+			"michigan-usa": [
+				"22-12-2019"
+			],
+			"new_york-usa": [
+				"29-11-2019"
+			],
+			"sanya-china": [
+				"01-01-2020"
+			],
+			"seattle-usa": [
+				"16-11-2019"
+			],
+			"texas-usa": [
+				"20-12-2019",
+				"23-11-2019"
+			],
+			"toronto-canada": [
+				"22-11-2019"
+			],
+			"washington-usa": [
+				"30-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 29,
+		"Name": "Post Malone",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/postmalone.jpeg",
+		"Members": [
+			"Post Malone"
+		],
+		"CreationDate": 2013,
+		"FirstAlbum": "13-05-2016",
+		"Concerts": {
+			"columbia-usa": [
+				"29-02-2020"
+			],
+			"grand_rapids-usa": [
+				"12-02-2020"
+			],
+			"hershey-usa": [
+				"22-02-2020"
+			],
+			"indianapolis-usa": [
+				"09-02-2020"
+			],
+			"kansas_city-usa": [
+				"05-02-2020"
+			],
+			"montreal-usa": [
+				"16-02-2020"
+			],
+			"newark-usa": [
+				"18-02-2020"
+			],
+			"omaha-usa": [
+				"04-02-2020"
+			],
+			"philadelphia-usa": [
+				"21-02-2020"
+			],
+			"pittsburgh-usa": [
+				"24-02-2020"
+			],
+			"rosemont-usa": [
+				"11-02-2020"
+			],
+			"st_louis-usa": [
+				"07-02-2020"
+			],
+			"toronto-usa": [
+				"14-02-2020"
+			],
+			"uniondale-usa": [
+				"19-02-2020"
+			],
+			"washington-usa": [
+				"27-02-2020"
+			]
+		}
+	},
+	{
+		"Id": 30,
+		"Name": "Travis Scott",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/travisScott.jpeg",
+		"Members": [
+			"Jacques Bermon Webster II"
+		],
+		"CreationDate": 2008,
+		"FirstAlbum": "18-08-2014",
+		"Concerts": {
+			"atlanta-usa": [
+				"14-10-2019"
+			],
+			"frauenfeld-switzerland": [
+				"11-07-2019"
+			],
+			"houston-usa": [
+				"10-11-2019",
+				"09-11-2019",
+				"24-08-2019"
+			],
+			"london-uk": [
+				"16-07-2019"
+			],
+			"los_angeles-usa": [
+				"24-11-2019"
+			],
+			"new_orleans-usa": [
+				"07-10-2019"
+			],
+			"philadelphia-usa": [
+				"31-08-2019"
+			],
+			"santiago-chile": [
+				"29-03-2020"
+			],
+			"sao_paulo-brazil": [
+				"05-04-2020"
+			],
+			"turku-finland": [
+				"05-07-2019"
+			]
+		}
+	},
+	{
+		"Id": 31,
+		"Name": "J. Cole",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/jCole.jpeg",
+		"Members": [
+			"Jermaine Lamarr Cole"
+		],
+		"CreationDate": 2007,
+		"FirstAlbum": "04-05-2007",
+		"Concerts": {
+			"boston-usa": [
+				"10-10-2018"
+			],
+			"brooklyn-usa": [
+				"04-06-2019"
+			],
+			"las_vegas-usa": [
+				"01-11-2019",
+				"02-11-2019",
+				"03-11-2019"
+			],
+			"montreal-canada": [
+				"05-10-2018"
+			],
+			"new_york-usa": [
+				"01-10-2018"
+			],
+			"philadelphia-usa": [
+				"06-10-2018"
+			],
+			"toronto-usa": [
+				"04-10-2018"
+			],
+			"washington-usa": [
+				"08-10-2018"
+			]
+		}
+	},
+	{
+		"Id": 32,
+		"Name": "Nickelback",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/nickelback.jpeg",
+		"Members": [
+			"Chad Kroeger",
+			"Ryan Peake",
+			"Mike Kroeger",
+			"Daniel Adair",
+			"Brandon Kroeger",
+			"Ryan Vikedal",
+			"Mitch Guindon"
+		],
+		"CreationDate": 1995,
+		"FirstAlbum": "04-09-1996",
+		"Concerts": {
+			"berlin-germany": [
+				"25-06-2020"
+			],
+			"budapest-hungary": [
+				"15-07-2020"
+			],
+			"copenhagen-denmark": [
+				"02-07-2020"
+			],
+			"frankfurt-germany": [
+				"23-06-2020"
+			],
+			"imola-italy": [
+				"05-07-2020"
+			],
+			"krakow-poland": [
+				"13-07-2020"
+			],
+			"london-uk": [
+				"10-07-2020"
+			],
+			"stockholm-sweden": [
+				"29-06-2020"
+			],
+			"vienna-austria": [
+				"07-07-2020"
+			],
+			"zurich-switzerland": [
+				"17-07-2020"
+			]
+		}
+	},
+	{
+		"Id": 33,
+		"Name": "Mobb Deep",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/mobbDeep.jpeg",
+		"Members": [
+			"Prodigy",
+			"Havoc"
+		],
+		"CreationDate": 1991,
+		"FirstAlbum": "23-04-1993",
+		"Concerts": {
+			"amityville-usa": [
+				"22-03-2017"
+			],
+			"chicago-usa": [
+				"17-03-2017"
+			],
+			"detroit-usa": [
+				"15-03-2017"
+			],
+			"minneapolis-usa": [
+				"16-03-2017"
+			],
+			"paris-france": [
+				"31-03-2017"
+			],
+			"philadelphia-usa": [
+				"03-06-2017"
+			]
+		}
+	},
+	{
+		"Id": 34,
+		"Name": "Guns N' Roses",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/gunsNRoses.jpeg",
+		"Members": [
+			"Axl Rose",
+			"Duff McKagan",
+			"Slash",
+			"Dizzy Reed",
+			"Richard Fortus",
+			"Frank Ferrer",
+			"Melissa Reese"
+		],
+		"CreationDate": 1985,
+		"FirstAlbum": "21-07-1987",
+		"Concerts": {
+			"berlin-germany": [
+				"03-06-2018"
+			],
+			"charlotte-usa": [
+				"25-09-2019"
+			],
+			"chicago-usa": [
+				"06-03-2017"
+			],
+			"houston-usa": [
+				"10-11-2017"
+			],
+			"inglewood-usa": [
+				"25-11-2017"
+			],
+			"los_angeles-usa": [
+				"24-11-2017"
+			],
+			"madrid-spain": [
+				"04-06-2017"
+			],
+			"oakland-usa": [
+				"21-11-2017"
+			]
+		}
+	},
+	{
+		"Id": 35,
+		"Name": "NWA",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/nwa.jpeg",
+		"Members": [
+			"Ice Cube",
+			"Eazy-E",
+			"Dr. Dre",
+			"MC Ren",
+			"DJ Yella",
+			"The D.O.C.",
+			"Arabian Prince"
+		],
+		"CreationDate": 1998,
+		"FirstAlbum": "03-11-1998",
+		"Concerts": {
+			"anaheim-usa": [
+				"24-03-1989"
+			],
+			"birmingham-uk": [
+				"25-06-1989"
+			],
+			"brooklyn-usa": [
+				"03-09-2016"
+			],
+			"chicago-usa": [
+				"12-01-1989"
+			],
+			"cincinnati-usa": [
+				"18-06-1989"
+			],
+			"windsor-canada": [
+				"03-09-2015"
+			]
+		}
+	},
+	{
+		"Id": 36,
+		"Name": "U2",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/u2.jpeg",
+		"Members": [
+			"Bono",
+			"The Edge",
+			"Adam Clayton",
+			"Larry Mullen Jr.",
+			"Ivan McCormick",
+			"Peter Martin",
+			"Dick Evans"
+		],
+		"CreationDate": 1976,
+		"FirstAlbum": "06-12-1980",
+		"Concerts": {
+			"auckland-new_zealand": [
+				"08-11-2019"
+			],
+			"brisbane-australia": [
+				"12-11-2019"
+			],
+			"manila-philippines": [
+				"11-12-2019"
+			],
+			"melbourne-australia": [
+				"15-11-2019"
+			],
+			"mumbai-india": [
+				"15-12-2019"
+			],
+			"sydney-australia": [
+				"22-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 37,
+		"Name": "Arctic Monkeys",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/arcticmonkeys.jpeg",
+		"Members": [
+			"Alex Turner",
+			"Matt Helders",
+			"Jamie Cook",
+			"Nick O'Malley",
+			"Andy Nicholson",
+			"Glyn Jones"
+		],
+		"CreationDate": 2002,
+		"FirstAlbum": "23-04-2007",
+		"Concerts": {
+			"bogota-colombia": [
+				"07-04-2019"
+			],
+			"lima-peru": [
+				"26-03-2019"
+			],
+			"rio_de_janeiro-brazil": [
+				"03-04-2019"
+			],
+			"san_isidro-argentina": [
+				"29-03-2019"
+			],
+			"santiago-chile": [
+				"29-03-2019"
+			],
+			"sao_paulo-brazil": [
+				"03-04-2019"
+			]
+		}
+	},
+	{
+		"Id": 38,
+		"Name": "Fall Out Boy",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/fallOutBoy.jpeg",
+		"Members": [
+			"Pete Wentz",
+			"Patrick Stump",
+			"Andy Hurley",
+			"Joe Trohman"
+		],
+		"CreationDate": 2001,
+		"FirstAlbum": "25-03-2003",
+		"Concerts": {
+			"antwerp-belgium": [
+				"19-06-2020"
+			],
+			"glasgow-uk": [
+				"24-06-2020"
+			],
+			"groningen-netherlands": [
+				"14-06-2020"
+			],
+			"london-uk": [
+				"26-06-2020"
+			],
+			"paris-france": [
+				"13-06-2020"
+			],
+			"vienna-austria": [
+				"21-06-2020"
+			]
+		}
+	},
+	{
+		"Id": 39,
+		"Name": "Gorillaz",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/gorillaz.jpeg",
+		"Members": [
+			"Damon Albarn",
+			"Jamie Hewlett",
+			"Remi Kabaka Jr."
+		],
+		"CreationDate": 1998,
+		"FirstAlbum": "26-03-2001",
+		"Concerts": {
+			"boston-usa": [
+				"13-10-2018"
+			],
+			"chicago-usa": [
+				"16-10-2018"
+			],
+			"mexico_city-mexico": [
+				"24-10-2018"
+			],
+			"philadelphia-usa": [
+				"11-10-2018"
+			],
+			"pico_rivera-usa": [
+				"20-10-2018"
+			]
+		}
+	},
+	{
+		"Id": 40,
+		"Name": "Eagles",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/eagles.jpeg",
+		"Members": [
+			"Glenn Frey",
+			"Don Henley",
+			"Randy Meisner",
+			"Bernie Leadon"
+		],
+		"CreationDate": 1971,
+		"FirstAlbum": "01-06-1972",
+		"Concerts": {
+			"berwyn-usa": [
+				"31-12-2019"
+			],
+			"dallas-usa": [
+				"29-02-2020",
+				"01-03-2020"
+			],
+			"georgia-usa": [
+				"07-02-2020",
+				"08-02-2020",
+				"11-02-2020"
+			],
+			"houston-usa": [
+				"07-03-2020"
+			],
+			"london-uk": [
+				"29-08-2020",
+				"30-08-2020"
+			],
+			"new_york-usa": [
+				"15-02-2020",
+				"14-02-2020",
+				"18-02-2020"
+			]
+		}
+	},
+	{
+		"Id": 41,
+		"Name": "Linkin Park",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/linkinpark.jpeg",
+		"Members": [
+			"Chester Bennington",
+			"Mike Shinoda",
+			"Brad Delson",
+			"Dave Farrell",
+			"Joe Hahn",
+			"Rob Bourdon"
+		],
+		"CreationDate": 1996,
+		"FirstAlbum": "27-01-2001",
+		"Concerts": {
+			"birmingham-uk": [
+				"06-07-2017"
+			],
+			"brixton-uk": [
+				"04-07-2017"
+			],
+			"california-usa": [
+				"27-10-2017"
+			],
+			"london-uk": [
+				"03-07-2017"
+			],
+			"rotselaar-belgium": [
+				"02-07-2017"
+			]
+		}
+	},
+	{
+		"Id": 42,
+		"Name": "Red Hot Chili Peppers",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/redhotchilipeppers.jpeg",
+		"Members": [
+			"Anthony Kiedis",
+			"Flea",
+			"Chad Smith",
+			"Josh Klinghoffer"
+		],
+		"CreationDate": 1983,
+		"FirstAlbum": "10-02-1990",
+		"Concerts": {
+			"alabama-usa": [
+				"15-05-2020"
+			],
+			"athens-greece": [
+				"05-06-2020"
+			],
+			"california-usa": [
+				"29-09-2019"
+			],
+			"florence-italy": [
+				"13-06-2020"
+			],
+			"landgraaf-netherlands": [
+				"19-06-2020"
+			],
+			"los_angeles-usa": [
+				"02-11-2019"
+			],
+			"massachusetts-usa": [
+				"22-05-2020"
+			],
+			"rio_de_janeiro-brazil": [
+				"03-10-2019"
+			]
+		}
+	},
+	{
+		"Id": 43,
+		"Name": "Eminem",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/eminem.jpeg",
+		"Members": [
+			"Marshall Bruce Mathers"
+		],
+		"CreationDate": 1996,
+		"FirstAlbum": "10-04-1999",
+		"Concerts": {
+			"abu_dhabi-united_arab_emirates": [
+				"25-10-2019"
+			],
+			"burswood-australia": [
+				"27-02-2019"
+			],
+			"melbourne-australia": [
+				"24-02-2019"
+			],
+			"sydney-australia": [
+				"22-02-2019"
+			],
+			"wellington-new_zealand": [
+				"02-03-2019"
+			]
+		}
+	},
+	{
+		"Id": 44,
+		"Name": "Green Day",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/greenday.jpeg",
+		"Members": [
+			"Billie Joe Armstrong",
+			"Mike Dirnt",
+			"Tré Cool"
+		],
+		"CreationDate": 1986,
+		"FirstAlbum": "18-06-1994",
+		"Concerts": {
+			"bangkok-thailand": [
+				"11-03-2020"
+			],
+			"hong_kong-china": [
+				"20-03-2020"
+			],
+			"los_angeles-usa": [
+				"24-11-2019"
+			],
+			"madrid-spain": [
+				"30-10-2019"
+			],
+			"manila-philippines": [
+				"14-03-2020"
+			],
+			"seoul-south_korea": [
+				"22-03-2020"
+			],
+			"seville-spain": [
+				"03-11-2019"
+			],
+			"taipei-taiwan": [
+				"17-03-2020"
+			]
+		}
+	},
+	{
+		"Id": 45,
+		"Name": "Metallica",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/metallica.jpeg",
+		"Members": [
+			"James Hetfield",
+			"Lars Ulrich",
+			"Kirk Hammett",
+			"Robert Trujillo"
+		],
+		"CreationDate": 1981,
+		"FirstAlbum": "22-08-1987",
+		"Concerts": {
+			"belo_horizonte-brazil": [
+				"27-04-2020"
+			],
+			"buenos_aires-argentina": [
+				"18-04-2020"
+			],
+			"mannheim-germany": [
+				"25-09-2019"
+			],
+			"munich-germany": [
+				"23-08-2019"
+			],
+			"porto_alegre-brazil": [
+				"21-04-2020",
+				"23-04-2020"
+			],
+			"san_francisco-usa": [
+				"06-09-2019",
+				"08-09-2019"
+			],
+			"santiago-chile": [
+				"15-04-2020"
+			],
+			"sao_paulo-brazil": [
+				"25-04-2020"
+			]
+		}
+	},
+	{
+		"Id": 46,
+		"Name": "Coldplay",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/coldplay.jpeg",
+		"Members": [
+			"Chris Martin",
+			"Guy Berryman",
+			"Jonny Buckland",
+			"Will Champion"
+		],
+		"CreationDate": 1996,
+		"FirstAlbum": "22-07-2000",
+		"Concerts": {
+			"california-usa": [
+				"08-10-2017"
+			],
+			"la_plata-argentina": [
+				"14-11-2017",
+				"15-11-2017"
+			],
+			"london-uk": [
+				"25-11-2019"
+			],
+			"porto_alegre-brazil": [
+				"11-11-2017"
+			],
+			"sao_paulo-brazil": [
+				"07-11-2017",
+				"08-11-2017"
+			]
+		}
+	},
+	{
+		"Id": 47,
+		"Name": "Maroon 5",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/maroon5.jpeg",
+		"Members": [
+			"Adam Levine",
+			"Jesse Carmichael",
+			"Mickey Madden",
+			"James Valentine",
+			"Matt Flynn",
+			"PJ Morton",
+			"Sam Farrar"
+		],
+		"CreationDate": 1994,
+		"FirstAlbum": "31-01-2004",
+		"Concerts": {
+			"brasilia-brazil": [
+				"03-03-2020"
+			],
+			"dubai-united_arab_emirates": [
+				"14-06-2019"
+			],
+			"florida-usa": [
+				"01-02-2020"
+			],
+			"mexico_city-mexico": [
+				"23-02-2020"
+			],
+			"santiago-chile": [
+				"28-02-2020"
+			],
+			"sao_paulo-brazil": [
+				"01-03-2020"
+			],
+			"willemstad-netherlands_antilles": [
+				"29-08-2019"
+			]
+		}
+	},
+	{
+		"Id": 48,
+		"Name": "Twenty One Pilots",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/twentyonepilots.jpeg",
+		"Members": [
+			"Tyler Joseph",
+			"Josh Dun"
+		],
+		"CreationDate": 2009,
+		"FirstAlbum": "14-09-2013",
+		"Concerts": {
+			"arras-france": [
+				"03-07-2020"
+			],
+			"california-usa": [
+				"08-12-2019"
+			],
+			"gdynia-poland": [
+				"01-07-2020"
+			],
+			"illinois-usa": [
+				"13-12-2019"
+			],
+			"oklahoma-usa": [
+				"09-11-2019"
+			],
+			"scheessel-germany": [
+				"19-06-2020"
+			],
+			"st_gallen-switzerland": [
+				"25-06-2020"
+			],
+			"texas-usa": [
+				"08-11-2019"
+			]
+		}
+	},
+	{
+		"Id": 49,
+		"Name": "The Rolling Stones",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/therollingstones.jpeg",
+		"Members": [
+			"Mick Jagger ",
+			"Keith Richards",
+			"Charlie Watts",
+			"Ron Wood"
+		],
+		"CreationDate": 1962,
+		"FirstAlbum": "31-07-1963",
+		"Concerts": {
+			"arizona-usa": [
+				"26-08-2019"
+			],
+			"california-usa": [
+				"22-08-2019"
+			],
+			"florida-usa": [
+				"31-08-2020"
+			],
+			"washington-usa": [
+				"14-08-2019"
+			]
+		}
+	},
+	{
+		"Id": 50,
+		"Name": "Muse",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/muse.jpeg",
+		"Members": [
+			"Matthew Bellamy",
+			"Christopher Wolstenholme",
+			"Dominic Howard "
+		],
+		"CreationDate": 1994,
+		"FirstAlbum": "26-06-1999",
+		"Concerts": {
+			"buenos_aires-argentina": [
+				"11-10-2019"
+			],
+			"lima-peru": [
+				"15-10-2019"
+			],
+			"mexico_city-mexico": [
+				"03-10-2019"
+			],
+			"santiago-chile": [
+				"13-10-2019"
+			],
+			"sao_paulo-brazil": [
+				"09-10-2019"
+			]
+		}
+	},
+	{
+		"Id": 51,
+		"Name": "Foo Fighters",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/foofighters.jpeg",
+		"Members": [
+			"Dave Grohl",
+			"Nate Mendel",
+			"Taylor Hawkins",
+			"Chris Shiflett",
+			"Pat Smear",
+			"Rami Jaffee"
+		],
+		"CreationDate": 1994,
+		"FirstAlbum": "01-07-1995",
+		"Concerts": {
+			"bogota-colombia": [
+				"01-10-2019"
+			],
+			"lisbon-portugal": [
+				"20-06-2020"
+			],
+			"massachusetts-usa": [
+				"22-05-2020"
+			],
+			"milan-italy": [
+				"14-06-2020"
+			],
+			"nevada-usa": [
+				"06-12-2019"
+			],
+			"nickelsdorf-austria": [
+				"10-06-2020"
+			],
+			"san_jose-costa_rica": [
+				"04-10-2019"
+			]
+		}
+	},
+	{
+		"Id": 52,
+		"Name": "The Chainsmokers",
+		"Image": "https://groupietrackers.herokuapp.com/api/images/thechainsmokers.jpeg",
+		"Members": [
+			"Alexander Pall",
+			"Andrew Taggart",
+			"Matt McGuire",
+			"Tony Ann"
+		],
+		"CreationDate": 2008,
+		"FirstAlbum": "15-03-2014",
+		"Concerts": {
+			"colorado-usa": [
+				"23-01-2020"
+			],
+			"milan-italy": [
+				"10-10-2020"
+			],
+			"munich-germany": [
+				"07-10-2020"
+			],
+			"nevada-usa": [
+				"07-12-2019",
+				"14-12-2019",
+				"31-12-2019",
+				"11-01-2020",
+				"18-01-2020"
+			],
+			"oregon-usa": [
+				"05-12-2019"
+			],
+			"prague-czechia": [
+				"08-10-2020"
+			],
+			"vancouver-canada": [
+				"06-12-2019"
+			]
+		}
+	}
+]

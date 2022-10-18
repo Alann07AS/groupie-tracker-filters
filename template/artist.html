@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Groupie Tracker : Artist</title>
+    <link rel="icon" type="image/png" href="../static/icn/icn-STS.png"/>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet"></link>
+</head>
+
+<body>
+    <nav>
+        <div class="anim">
+        <a href="../allArtists" class="infobulle" aria-label="Retour" alt="Retour : Icone de redirection vers la page allArtist"><img src="../static/icn/icn-retour.png" alt="icn-retour"></a>
+        </div>
+            <div>
+                <h3>Artist : {{.Name}}</h3>
+            </div>
+    </nav>
+
+    <main>
+        <div id="{{.Id}}" class="detail vertical">
+            <div>
+                <h2>{{.Name}}</h2>  
+            </div>
+
+            <div class="horizontal">
+                <a><img src="{{.Image}}" class="img"></a>
+
+                <div class="grptxt vertical">
+                    <h4 class="horizontal">Creation Date : {{.CreationDate}}</h4>
+                    <h4 class="horizontal">First album : {{.FirstAlbum}}</h4>
+                </div>
+
+                <div class="grptxt">
+                    <h4>All Members : </h4>
+                    <ul>
+                        {{range .Members}}
+                        <li>{{ . }}</li>
+                        {{end}}
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grptxt vertical container">
+                <h3 >Lives :</h3>
+                <div class="horizontal">
+                    <ul id="list-concerts"></ul>
+                    <div id="map"></div>
+                </div>
+                <button id="zoom-init">Zoom Init</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Zone01 - Tony Quedeville : tquedevi</h5>
+        <h5>Projet Groupie-Tracker : 26/09/2022</h5>
+        <a href="https://zone01normandie.org/git/tquedevi/Groupie-Tracker" class="infobulle anim" target="_blank" aria-label="Gitea Zone01 : Groupie-Tracker" alt="Lien vers le projet Gitea Groupie-Tracker">
+            <div class="logo"><img src="../static/icn/icn-STS-blanc.png" width="25" height="25" alt="Logo STS"></div>
+        </a>
+    </footer>
+
+    <!-- Script JS -->                
+        <!-- Doc https://api.jquery.com/ -->
+        <!-- jQuery 
+        -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+        <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+        <script src="../static/js/artist.js"></script> 
+        
+    <!----> 
+</body>
+
+</html> 

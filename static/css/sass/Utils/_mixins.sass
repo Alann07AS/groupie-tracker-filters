@@ -1,0 +1,76 @@
+/*
+    Tony Quedeville : tquedevi
+    Zone01: Projet Groupie-Tracker
+    26-09-2022
+    */
+
+
+@mixin navfoot
+    width: 98%
+    margin: 10px 1%
+    background: $fondNavFoot
+    box-shadow: $boxShadow
+    border: 1px solid $white
+    border-radius: $borderRadius
+    transition: 200ms
+    
+    display: flex
+    justify-content: space-around
+    align-items: center
+    font-family: $fontFamily
+    color: $lightblue
+
+@mixin mixinButton    
+    width: auto
+    height: auto
+    margin: 1rem
+    padding: 10px 15px 10px 15px
+
+    border-radius: $borderRadius
+    border: none
+    
+    font-family: $fontFamily
+    color: $white
+    font-size: $fontSize
+    font-weight: normal
+
+    background: $fondElement
+    box-shadow: $boxShadow
+    transition: transform .4s ease
+    transform: scale(.8)
+
+    &:hover
+        transform: scale(.9) rotate(2deg)
+        background: $fondElementHoover
+        cursor: pointer
+
+    &::placeholder
+        color: $darkblue 
+        font-style: italic
+
+@mixin mixinInput  
+    width: auto
+    height: auto
+    margin: 10px
+
+    border-radius: $borderRadius
+    border: none
+    
+    font-family: $fontFamily
+    color: $white
+    font-size: $fontSize
+    font-weight: normal
+
+    background: $fondElement
+    box-shadow: $boxShadow
+    transition: transform .4s ease
+    transform: scale(.8)
+
+    &:hover
+        transform: scale(.9) rotate(2deg)
+        background: $fondElementHoover
+        cursor: pointer
+
+    &::placeholder
+        color: $darkblue 
+        font-style: italic

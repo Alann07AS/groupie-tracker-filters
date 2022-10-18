@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Groupie Tracker</title>
+    <link rel="icon" type="image/png" href="../static/icn/icn-STS.png"/>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" placeholder="Pseudo" id="pseudo" name="pseudo" required>
+            
+            <label for="motpass">Mot de passe</label>
+            <input type="password" placeholder="********" id="motpass" name="motpass" required>
+
+            <button type="button" id="seConnecter" >Se connecter</button>
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <H1> Groupie Tracker </H1> 
+        </div>
+
+        <div class="anim cercle">
+            <a href="../allArtists" class="infobulle" aria-label="Start : Groupie-Tracker" alt="Power : Icone de redirection vers la liste des groupes"> 
+                <img src="../static/icn/icn-play.png" class="">
+            </a>
+        </div>
+
+        <div id="loading" class="container">
+            <label for="load">Loading</label>
+            <progress class="load" id="load" max="100"></progress>
+        </div>
+
+    </header>
+
+    <footer>
+        <h5>Zone01 - Tony Quedeville : tquedevi</h5>
+        <h5>Projet Groupie-Tracker : 26/09/2022</h5>
+        <a href="https://zone01normandie.org/git/tquedevi/Groupie-Tracker" class="infobulle anim" target="_blank" aria-label="Gitea Zone01: Groupie-Tracker" alt="Lien vers le projet Gitea Groupie-Tracker">
+            <div class="logo">
+                <img src="../static/icn/icn-STS-blanc.png" width="25" height="25" alt="Logo STS">
+            </div>
+        </a>
+    </footer>
+</body>
+
+</html>

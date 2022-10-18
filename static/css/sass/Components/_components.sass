@@ -1,0 +1,155 @@
+/*
+    Tony Quedeville : tquedevi
+    Zone01: Projet Groupie-Tracker
+    26-09-2022
+    */
+
+input
+    @include mixinInput
+
+    &[type="number"]
+        padding-left: 10px
+
+    &[type="checkbox"]
+        visibility: hidden
+        width: 0
+        height: 0
+        margin: 0px
+
+        & + label
+            position: absolute
+            margin: 2px
+            margin-left: 10px
+            color: $darkblue
+
+            &:hover
+                color: $lightblue
+
+        &:checked + label
+            color: $white
+
+.checkbox   
+    width: 1.7em 
+    height: 1.4em
+    margin: 5px
+    border-radius: 100%
+    box-shadow: $boxShadow
+    border: none
+    background: $fondElement
+
+    &:hover
+        box-shadow: $light
+        cursor: pointer
+
+button
+    @include mixinButton
+
+.btn
+    background: none
+    box-shadow: none
+    &:hoover
+        transform: scale(.8) rotate(0deg)
+        background: none
+    
+textarea
+    @include mixinButton
+
+select
+    @include mixinInput
+    color: $white
+    text-shadow: $boxShadow
+
+    option
+        color: $darkblue
+
+    option[disabled] 
+        color: $lightblue
+
+
+    
+
+pre
+    overflow: auto
+    margin: 10px
+
+.img
+    border-radius: $rond
+    background: $fondElement
+    box-shadow: $boxShadow
+    filter: grayscale(95%)
+    transition: transform .4s ease
+    transform: scale(1.1)
+
+    &:hover
+        transform: scale(1.2) rotate(2deg)
+        background: $fondElementHoover
+        box-shadow: $light
+        filter: grayscale(75%)
+
+.icn
+    width: 60px
+    height: 60px
+    border-radius: $borderRadius
+    box-shadow: $boxShadow
+    &:hover 
+        box-shadow: $light
+        cursor: pointer
+
+.infobulle  
+    position: relative 
+    cursor: help
+
+    &:hover::after,
+    &:focus::after 
+        content: attr(aria-label)
+        position: absolute
+        align-items: left 
+        top: 1.5em
+        left: 100%
+        white-space: nowrap
+        z-index: 1
+        padding: 5px
+        background: $fondContainer
+        border-radius: $borderRadius
+        box-shadow: $light
+        color: $boxShadow
+
+.logo
+    width: 35px
+    height: 35px
+    background: $fondContainer
+    box-shadow: $boxShadow
+    border-radius: $borderRadius
+    margin: 10px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    align-content: center
+
+.anim
+    transition: transform .4s ease
+    transform: scale(.8)
+
+    &:hover
+        transform: scale(.9) rotate(2deg)
+
+#map 
+    height: 50vh
+    width: 50vw
+    margin: 10px
+    box-shadow: $boxShadow
+    border-radius: $borderRadius
+    overflow: auto
+    z-index: 1
+
+#search
+    //background-image: url('/css/searchicon.png')
+    background: $fondElement
+    margin: 5px
+
+#load
+    margin: 5px 10px 5px 10px
+
+#loading
+    padding-left: 10px
+

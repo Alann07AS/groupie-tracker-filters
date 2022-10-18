@@ -1,0 +1,138 @@
+/*
+    Tony Quedeville : tquedevi
+    Zone01: Projet Groupie-Tracker
+    26-09-2022
+    */
+
+nav  
+    @include navfoot
+    z-index: 1
+    position: fixed
+
+    &:hover 
+        background: $fondElementHoover
+
+footer
+    @include navfoot
+    height: 48px
+
+.allArtist
+    display: flex
+    align-items: space-around
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+
+.container
+    position: relative
+    background: $fondContainer
+    box-shadow: $boxShadow
+    border-radius: $borderRadius
+    margin: 20px
+    padding: 5px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    align-content: center
+    flex-wrap: wrap
+    max-width: 90vw
+
+    &:hover
+        box-shadow: $light
+
+.card
+    cursor: pointer
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    align-content: center
+    flex-wrap: wrap
+    margin: 5px
+    padding: 10px
+    background: $fondContainer
+    box-shadow: $boxShadow
+    border-radius: $borderRadius
+
+.filter
+    flex-wrap: wrap
+    position: relative
+    background: $fondContainer
+    box-shadow: $boxShadow
+    border-radius: $borderRadius
+    z-index: 2
+    transition: transform .4s ease
+    transform: scale(.8)
+    &:hover
+        box-shadow: $light
+        transform: scale(.9) rotate(2deg)
+
+    &.face1
+        position: relative
+        display: flex
+        justify-content: space-around
+        align-items: center
+        z-index: 2
+        &:hover + .face2
+            display: flex
+            min-height: 50px
+            opacity: 1
+            transform: translateY(80px) scale(1)
+    
+    &.face2
+        position: absolute
+        display: flex
+        justify-content: space-around
+        align-items: center
+        z-index: 1
+        height: 130px
+        overflow: hidden
+        background: $fondContainer
+        border: 1px solid $white
+        transform: translateY(0px) scale(0)
+        opacity: 0
+        &:hover
+            display: flex
+            min-height: 50px
+            opacity: 1
+            transform: translateY(80px) scale(1)
+            box-shadow: $light            
+
+.fixe
+    position: fixed
+
+.vertical
+    margin: 20px
+    flex-direction: column
+
+.horizontal
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+
+.detail
+    height: auto
+    background: $fondContainer
+    box-shadow: $boxShadow
+    border-radius: $borderRadius
+    margin: 10px
+
+.grptxt
+    margin: 20px
+    display: flex
+    justify-content: center
+
+.cercle
+    border: 1px solid $white
+    background: $fondNavFoot
+    box-shadow: $boxShadow
+    border-radius: 50%
+    margin: 20px
+    padding: 20px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    align-content: center
+    flex-wrap: wrap
