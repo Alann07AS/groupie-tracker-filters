@@ -19,20 +19,26 @@ let aujourdhui = annee + "-" + mois + "-" + jour
 const paysVille = new Set()
 const pays = new Set()
 const ville = new Set()
+let listId = new Set()
+let listIdfcd = new Set()
+let listIdffd = new Set()
+let listIdfnm = new Set()
+let listIdfllp = new Set()
+let listIdfllv = new Set()
+let listIdfld= new Set()
+
+let fcd = false
+let ffd = false
 /*-*/
 
 /* Initialisation de la page */
 $(document).ready(function(){
     // initialisation des filtres
-    $("#live-start").val(aujourdhui)
-    $("#live-end").val(aujourdhui)
-
-    //  Filters 
     // Nombre de membre
     for (i=1; i<=8; i++) {
         $(`#number-member`).append(`
             <div class="checkbox">
-                <input type="checkbox" name="number-member-${i}" id="number-member-${i}"/>
+                <input type="checkbox" name="number-member-${i}" id="number-member-${i}" class="number-member"/>
                 <label for="number-member-${i}">${i}</label>
             </div>
         `)
@@ -87,49 +93,68 @@ function filters() {
 
     // Date de creation
     $(`#create-min`).change(() => {
+        $(`#fcd`).prop("checked", true)
         yearCreateMin = $(`#create-min`).val()
         if (yearCreateMin > yearCreateMax) {
             yearCreateMax = yearCreateMin
             $(`#create-max`).val(yearCreateMin)
         }
-        listFilter("fcd") // ffd: filter creation date
-    })
+        listFilter()
+    })    
 
     $(`#create-max`).change(() => {
         yearCreateMax = $(`#create-max`).val()
-        if (yearCreateMax < yearCreateMin) {
+        $(`#fcd`).prop("checked", true)
+        if (yearCreateMax < yearCreateMin || (yearCreateMin == 0 && yearCreateMax > 0)) {
             yearCreateMin = yearCreateMax
             $(`#create-min`).val(yearCreateMax)
         }
-        listFilter("fcd") // ffd: filter creation date
-    })
+        listFilter()
+    })  
 
+    $(`#fcd`).change(() => {
+        listFilter()
+    })
+    
+    
     // First album
     $(`#first-min`).change(() => {
         yearfirstMin = $(`#first-min`).val()
+        $(`#ffd`).prop("checked", true)
         if (yearfirstMin > yearfirstMax) {
             yearfirstMax = yearfirstMin
             $(`#first-max`).val(yearfirstMin)
         }
-        listFilter("ffd") // ffd: filter first date
+        listFilter()
     })
 
     $(`#first-max`).change(() => {
         yearfirstMax = $(`#first-max`).val()
-        if (yearfirstMax < yearfirstMin) {
+        $(`#ffd`).prop("checked", true)
+        if (yearfirstMax < yearfirstMin || (yearfirstMin == 0 && yearfirstMax > 0)) {
             yearfirstMin = yearfirstMax
             $(`#first-min`).val(yearfirstMax)
         }
-        listFilter("ffd") // ffd: filter first date
+        listFilter()
+    })
+
+    $(`#ffd`).change(() => {
+        listFilter()
     })
 
     // Nombre de membre
-    $(`input[type=checkbox]`).change(function() {
-        listFilter("fnm") // fnm : filter number member
+    $(`.number-member`).change(function() {
+        $(`#fnm`).prop("checked", true)
+        listFilter()
     })
     
+    $(`#fnm`).change(() => {
+        listFilter()
+    })
+
     // Lieu de concert
     $(`#live-country`).change(() => {
+        $(`#fll`).prop("checked", true)
         liveCountry = $(`#live-country`).val()
 
         $(`.option-city`).remove()
@@ -150,26 +175,46 @@ function filters() {
                 <option class="option-city">${ct}</option>
             `)
         }
-
-        listFilter("fllp") // fllp: filter live location pays
+        listFilter() 
+    })
+    
+    $(`#live-city`).change(() => {
+        $(`#fll`).prop("checked", true)
+        listFilter() 
     })
 
-    $(`#live-city`).change(() => {
-        listFilter("fllv") // fllv: filter live location ville
+    $(`#fll`).change(() => {
+        listFilter()
     })
 
     // Date de concert
     $(`#live-start`).change(() => {
-        liveCountry = $(`#live-start`).val()
-        listFilter("fld") // fld: filter live date
+        $(`#fld`).prop("checked", true)
+        liveStart = $(`#live-start`).val()
+        if (liveStart > liveEnd) {
+            $(`#live-end`).val(liveStart)
+        }
+        listFilter() 
     })
 
     $(`#live-end`).change(() => {
-        liveCountry = $(`#live-end`).val()
-        listFilter("fld") // fld: filter live date
+        $(`#fld`).prop("checked", true)
+        liveEnd = $(`#live-end`).val()
+        if (liveStart > liveEnd || (liveStart == 0 && liveEnd != 0)) {
+            $(`#live-start`).val(liveEnd)
+        }
+        listFilter() 
+    })
+
+    $(`#fld`).change(() => {
+        listFilter()
+    })
+
+    // Init filtres
+    $(`#init-filter`).click(() => {
+        window.location.replace("./allArtists")
     })
 }
-
 
 // Search Bar
 function searchBar() {
@@ -186,7 +231,7 @@ function strUcFirst(str){
 }
 
 /* liste des resultats filtres */
-function listFilter(typeFilter) {
+function listFilter(typeFilter = "") {
     let createMinFilter = $(`#create-min`).val()
     let createMaxFilter = $(`#create-max`).val()
     let firstMinFilter = $(`#first-min`).val()
@@ -197,13 +242,28 @@ function listFilter(typeFilter) {
     let liveEnd = $(`#live-end`).val()
     let searchFilter = $(`#search`).val().toUpperCase()
 
+    listId = new Set()
+    listIdfcd = new Set()
+    listIdffd = new Set()
+    listIdfnm = new Set()
+    listIdfllp = new Set()
+    listIdfllv = new Set()
+    listIdfld= new Set()
+
     // Masque tous les groupes
     for(i=1; i<=52; i++){
         $(`#group${i}`).hide()
     }
-
-    const requeteGet = fetch('./static/json/listArtist.json')
-    requeteGet
+    
+    if (typeFilter == "sch" || 
+        $(`#fcd`).prop("checked") == true || 
+        $(`#ffd`).prop("checked") == true || 
+        $(`#fnm`).prop("checked") == true || 
+        $(`#fll`).prop("checked") == true || 
+        $(`#fld`).prop("checked") == true
+    ) {
+        const requeteGet = fetch('./static/json/listArtist.json')
+        requeteGet
         .then((reponse) => {
             const PromesseJson = reponse.json();
             
@@ -223,11 +283,11 @@ function listFilter(typeFilter) {
 
                     // Creation date 
                     let creationDate = data[idArtist].CreationDate
-                    if (typeFilter == "fcd" && creationDate >= createMinFilter && creationDate <= createMaxFilter) {
-                        $(`#group${idArtist+1}`).show()
+                    if ($(`#fcd`).prop("checked") == true && creationDate >= createMinFilter && creationDate <= createMaxFilter) {
+                        listIdfcd.add(idArtist)
+                        listId.add(idArtist)
                     }
                     if (typeFilter == "sch" && creationDate.toString().indexOf(searchFilter) > -1) {
-                        console.log("search !")
                         $(`#result-search`).append(`
                             <option id="creationDate${idArtist}" class="results">CreationDate:${idArtist}: ${data[idArtist].Name} : ${data[idArtist].CreationDate}</option>
                         `)
@@ -238,9 +298,11 @@ function listFilter(typeFilter) {
                     // Fisrt album
                     let firstAlbum = data[idArtist].FirstAlbum
                     let yearFirstAlbum = firstAlbum.split('-')[2]
-                    if (typeFilter == "ffd" && yearFirstAlbum >= firstMinFilter && yearFirstAlbum <= firstMaxFilter) {
-                        $(`#group${idArtist+1}`).show()
+                    if ($(`#ffd`).prop("checked") == true && yearFirstAlbum >= firstMinFilter && yearFirstAlbum <= firstMaxFilter) {
+                        listIdffd.add(idArtist)
+                        listId.add(idArtist)
                     }
+
                     if (typeFilter == "sch" && firstAlbum.toString().indexOf(searchFilter) > -1) {
                         $(`#result-search`).append(`
                             <option id="firstAlbum${idArtist}" class="results">FirstAlbum:${idArtist}: ${data[idArtist].Name} : ${data[idArtist].FirstAlbum}</option>
@@ -250,11 +312,12 @@ function listFilter(typeFilter) {
                     //*/
 
                     // Members
-                    if (typeFilter == "fnm") {
+                    if ($(`#fnm`).prop("checked") == true) {
                         let nbMember = data[idArtist].Members.length
                         for (inm=1; inm<=8; inm++) {
                             if ($(`#number-member-${inm}`).prop("checked") && inm == nbMember) {
-                                $(`#group${idArtist+1}`).show()
+                                listIdfnm.add(idArtist)
+                                listId.add(idArtist)
                             } 
                         }
                     }
@@ -278,12 +341,14 @@ function listFilter(typeFilter) {
                         let pays = villePays[1].toUpperCase() // Pays en majuscule
                         let ville = strUcFirst(villePays[0]) // Première lettre de la ville en majuscule
 
-                        if (typeFilter == "fllp" && liveCountry.toUpperCase() == pays) {
-                            $(`#group${idArtist+1}`).show()
+                        if ($(`#fll`).prop("checked") == true && liveCountry != null && liveCountry.toUpperCase() == pays) {
+                            listIdfllp.add(idArtist)
+                            listId.add(idArtist)
                         }
-
-                        if (typeFilter == "fllv" && strUcFirst(liveCity) == ville) {
-                            $(`#group${idArtist+1}`).show()
+                        
+                        if ($(`#fll`).prop("checked") == true && liveCity != null && strUcFirst(liveCity) == ville) {
+                            listIdfllv.add(idArtist)
+                            listId.add(idArtist)
                         }
 
                         if (typeFilter == "sch") {
@@ -304,8 +369,9 @@ function listFilter(typeFilter) {
                             var liveS = new Date(ls[0], ls[1]-1, ls[2])
                             var liveE = new Date(le[0], le[1]-1, le[2])
 
-                            if (typeFilter == "fld" && liveS.getTime() <= dateC.getTime() && liveE.getTime() >= dateC.getTime()) {
-                                $(`#group${idArtist+1}`).show()
+                            if ($(`#fld`).prop("checked") == true && liveS.getTime() <= dateC.getTime() && liveE.getTime() >= dateC.getTime()) {
+                                listIdfld.add(idArtist)
+                                listId.add(idArtist)
                             }
 
                             if (typeFilter == "sch") {
@@ -320,15 +386,124 @@ function listFilter(typeFilter) {
                     })
                     //*/
                 }
+
+                // Recherche des id communs                
+                // Initialisation du tableau 
+                let tabId = []  
+                if (listId.size > 0) {
+                    for (const idArtist of listId) {  
+                        tabId.push(idArtist)
+                    }
+                    listId = new Set()
+
+                    // Date de creation
+                    if (listIdfcd.size > 0) {
+                        for (const idArtist of listIdfcd) {  
+                            if (tabId.includes(idArtist)) {
+                                listId.add(idArtist)
+                            }
+                        }
+                        tabId = []                
+                        for (const idArtist of listId) { 
+                            tabId.push(idArtist)
+                        }
+                        listId = new Set()
+                    }
+                    //*/
+
+                    // Date de premier album
+                    if (listIdffd.size > 0) {
+                        for (const idArtist of listIdffd) {  
+                            if (tabId.includes(idArtist)) {
+                                listId.add(idArtist)
+                            }
+                        }
+                        tabId = []                
+                        for (const idArtist of listId) { 
+                            tabId.push(idArtist)
+                        }
+                        listId = new Set()
+                    }
+                    //*/
+
+                    // Nombre de membre
+                    if (listIdfnm.size > 0) {
+                        for (const idArtist of listIdfnm) { 
+                            if (tabId.includes(idArtist)) {
+                                listId.add(idArtist)
+                            }
+                        }
+                        tabId = []                
+                        for (const idArtist of listId) { 
+                            tabId.push(idArtist)
+                        }
+                        listId = new Set()
+                    }
+                    //*/
+
+                    // Lieu de concert : Pays
+                    if (listIdfllp.size > 0) {
+                        for (const idArtist of listIdfllp) { 
+                            if (tabId.includes(idArtist)) {
+                                listId.add(idArtist)
+                            }
+                        }
+                        tabId = []                
+                        for (const idArtist of listId) { 
+                            tabId.push(idArtist)
+                        }
+                        listId = new Set()
+                    }
+                    //*/
+
+                    // Lieu de concert : ville
+                    if (listIdfllv.size > 0) {
+                        for (const idArtist of listIdfllv) { 
+                            if (tabId.includes(idArtist)) {
+                                listId.add(idArtist)
+                            }
+                        }
+                        tabId = []                
+                        for (const idArtist of listId) { 
+                            tabId.push(idArtist)
+                        }
+                        listId = new Set()
+                    }
+                    //*/
+
+                    // Date de concert
+                    if (listIdfld.size > 0) {
+                        for (const idArtist of listIdfld) { 
+                            if (tabId.includes(idArtist)) {
+                                listId.add(idArtist)
+                            }
+                        }
+                        tabId = []                
+                        for (const idArtist of listId) { 
+                            tabId.push(idArtist)
+                        }
+                        listId = new Set()
+                    }
+                    //*/
+
+                    tabId.forEach((idArtist) => {
+                        $(`#group${idArtist+1}`).show()
+                    })
+                    //*/
+                }
             })
         })
         .catch((error) => {
             //console.error(error)
             alert( error );
         })
+    } else { // no filters
+        window.location.replace("./allArtists")
+    }
 //*/
 }
 /*---*/
+
 
 /* liste des resultats filtres */
 function apiLocation() {
